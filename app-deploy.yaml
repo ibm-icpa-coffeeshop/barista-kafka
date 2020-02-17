@@ -1,0 +1,45 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  annotations:
+    cekit.io/version: 3.5.0
+    graalvm-archive-filename: graalvm-ce-linux-amd64-19.2.1.tar.gz
+    graalvm-archive-url: https://github.com/oracle/graal/releases/download/vm-19.2.1/graalvm-ce-linux-amd64-19.2.1.tar.gz
+    image.opencontainers.org/created: "2020-02-17T09:17:00Z"
+    k8s.io/description: Quarkus.io builder image for building Quarkus applications.
+    k8s.io/display-name: Centos + GraalVM + Maven Image
+    maintainer: Quarkus Team <quarkus-dev@googlegroups.com>
+    openshift.io/expose-services: 8080:http
+    openshift.io/tags: builder,java,quarkus
+    org/label-schema.build-date: "20190801"
+    org/label-schema.license: GPLv2
+    org/label-schema.name: CentOS Base Image
+    org/label-schema.schema-version: "1.0"
+    org/label-schema.vendor: CentOS
+    stack.appsody.dev/authors: Paul Robinson <probinso@redhat.com>
+    stack.appsody.dev/configured: docker.io/appsody/quarkus:0.2
+    stack.appsody.dev/created: "2020-01-21T09:21:50Z"
+    stack.appsody.dev/description: Quarkus runtime for running Java applications
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/tag: docker.io/appsody/quarkus:0.2.3
+    stack.appsody.dev/title: Quarkus
+  creationTimestamp: null
+  labels:
+    image.opencontainers.org/title: barista-kafka
+    stack.appsody.dev/id: quarkus
+    stack.appsody.dev/version: 0.2.3
+  name: barista-kafka
+  namespace: default
+spec:
+  applicationImage: matthewpwilson/barista-kafka-quarkus:mon1
+  createKnativeService: false
+  expose: true
+  service:
+    port: 8080
+    type: NodePort
+  stack: quarkus
+  version: 1.0.0
+  env:
+    - name: KAFKA_BOOTSTRAP_SERVERS
+      value: my-cluster-kafka-bootstrap.kafka.svc:9092
+status: {}

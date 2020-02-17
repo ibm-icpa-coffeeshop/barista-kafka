@@ -1,0 +1,2 @@
+project-name: barista-kafka
+stack: docker.io/appsody/quarkus:0.2
