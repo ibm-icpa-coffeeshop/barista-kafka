@@ -1,3 +1,4 @@
-project-name: barista-kafka
 application-name: coffeeshop
+id: "20200605114106.16385740"
+project-name: barista-kafka
 stack: docker.io/appsody/quarkus:0.2
