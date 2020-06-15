@@ -1,10 +1,10 @@
 # Coffee Shop demo barista-kafka service
 
-This microservice provides a event-based implementation of a barista for the Coffee Shop demo using Quarkus and Kafka. The barista receives requests for coffee by subscribing to the `orders` topic. It fulfils them asynchoronously and publishes to the `queue` topic. For more information on the Coffee Shop scenario, see [Design and deliver an event-driven, cloud-native application at lightning speed](https://developer.ibm.com/tutorials/accelerator-for-event-driven-solutions/).
+This microservice provides a event-based implementation of a barista for the Coffee Shop demo using Quarkus and Kafka. The barista receives requests for coffee by subscribing to the `orders` topic. It fulfils them asynchronously and publishes to the `queue` topic. For more information on the Coffee Shop scenario, see [Design and deliver an event-driven, cloud-native application at lightning speed](https://developer.ibm.com/tutorials/accelerator-for-event-driven-solutions/).
 
 ## Local development
 
-This project has been developed using [Appsody](https://appsody.dev/).  This service needs to connect to a Kafka broker, so to develop locally you must start one.  You can do this using the providing Docker Compose file, with the following command:
+This project has been developed using [Appsody](https://appsody.dev/).  This service needs to connect to a Kafka broker, so to develop locally you must start one.  You can do this using the provided Docker Compose file, with the following command:
 ```
 docker-compose up
 ```
