@@ -20,7 +20,7 @@ For more information, see [Local development](https://appsody.dev/docs/using-app
 ## Building and deploying to a Kubernetes cluster
 
 You can use Appsody to deploy the service to a Kubernetes cluster.
-Edit `app-deploy.yaml` to override the bootstrap server configuration by setting an enviornment variable as follows:
+Edit `app-deploy.yaml` to override the bootstrap server configuration by setting an environment variable as follows:
 
 ```
 spec:
