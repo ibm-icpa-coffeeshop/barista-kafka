@@ -33,3 +33,7 @@ spec:
 Now issue the command `appsody deploy`. This will build a Docker image suitable for production, and deploy it by creating the necessary resources on your Kubernetes cluster. For more information, see [Deploying](https://appsody.dev/docs/using-appsody/deploying).  
 
 You can also use the [GitOps repo](https://github.com/ibm-icpa-coffeeshop/gitops-dev) to deploy the complete application. This includes provisioning a Kafka cluster using the Strimzi operator.
+
+# Acknowledgements
+
+Based on the [Quarkus Coffee Shop demo](https://github.com/cescoffier/quarkus-coffeeshop-demo/) by Clement Escoffier.
